@@ -19,7 +19,7 @@ def es_conexion_unica(ciudad_origen, ciudad_destino):
 
 
 def mostrar_grafo():
-    plt.figure(figsize=(1, 8))
+    plt.figure(figsize=(12, 8))
     pos = nx.fruchterman_reingold_layout(G)
     nx.draw(G, pos, with_labels=True, font_weight='bold', node_size=500, node_color='skyblue', font_size=10)
     plt.title("Grafo de Conexiones entre Ciudades")
